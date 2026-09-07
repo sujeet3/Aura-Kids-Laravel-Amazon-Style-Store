@@ -1,0 +1,2 @@
+@extends('layouts.app',['title'=>'Order Confirmed'])
+@section('content')<main class="wrap"><div class="page success"><div class="check">✓</div><h1>Order Confirmed!</h1><p>Thank you for shopping with AURA Kids Wear.</p><p>Your order #{{ $order->id }} has been placed successfully.</p><a class="btn" href="{{ route('shop') }}">Continue Shopping</a></div></main>@endsection

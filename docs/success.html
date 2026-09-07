@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Order Placed — AURA Kids Wear</title>
+    <link rel="stylesheet" href="css/aura.css">
+</head>
+<body>
+    <div class="top">AURA KIDS • FREE DELIVERY ABOVE ₹999 • CASH ON DELIVERY • EASY RETURNS</div>
+    <header>
+        <div class="head wrap">
+            <a class="logo" href="index.html">AURA<span>kids</span></a>
+            <div class="deliver">📍 Deliver to<br><b>India</b></div>
+            <form class="search" data-base="">
+                <select name="category">
+                    <option value="">All Categories</option>
+                    <option value="Babywear">Babywear (0–2)</option>
+                    <option value="Dresses">Dresses (Girls 2–9)</option>
+                    <option value="Boys">Boys (2–9)</option>
+                    <option value="Co-ord Sets">Co-ord Sets</option>
+                    <option value="Party Wear">Party Wear</option>
+                    <option value="Ethnic Wear">Ethnic Wear</option>
+                    <option value="Nightwear">Nightwear</option>
+                </select>
+                <input name="q" placeholder="Search AURA Kids Wear">
+                <button type="submit">⌕</button>
+            </form>
+            <a class="cart-count-badge" href="cart.html">🛒 Cart (0)</a>
+        </div>
+        <nav class="nav">
+            <div class="wrap navin">
+                <a href="index.html">☰ All</a>
+                <a href="shop.html?category=Babywear">Baby 0–2</a>
+                <a href="shop.html?category=Dresses">Girls 2–9</a>
+                <a href="shop.html?category=Boys">Boys 2–9</a>
+                <a href="shop.html">New Arrivals</a>
+                <a href="shop.html">Best Sellers</a>
+                <a href="shop.html?category=Co-ord%20Sets">Co-ord Sets</a>
+                <a href="shop.html?category=Party%20Wear">Party Wear</a>
+                <a href="shop.html?category=Ethnic%20Wear">Ethnic Wear</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="wrap">
+    <div class="page success">
+        <div class="check">✅</div>
+        <h1>Order Placed Successfully!</h1>
+        <p>Thank you for choosing AURA Kids Wear India Private Limited.</p>
+        <div class="box" style="max-width:500px;margin:20px auto;text-align:left;">
+            <p><b>Order ID:</b> <span id="order-id-display">AKW-LIVE</span></p>
+            <p><b>Estimated Delivery:</b> 3-5 Business Days across India</p>
+            <p><b>Support:</b> +91 74208 48939 | omagroasia@gmail.com</p>
+        </div>
+        <br>
+        <a class="btn" href="index.html">← Continue Shopping</a>
+    </div>
+</main>
+<script>
+    try {
+        const last = JSON.parse(localStorage.getItem('aura_last_order'));
+        if (last && last.id) {
+            document.getElementById('order-id-display').textContent = last.id;
+        }
+    } catch(e) {}
+</script>
+
+    <footer>
+        <div class="wrap foot">
+            <div>
+                <div class="logo">AURA<span>kids</span></div>
+                <p>Little Styles. Big Smiles. Premium kidswear for 0–9 years.</p>
+            </div>
+            <div>
+                <h3>Shop</h3>
+                <p>
+                    <a href="shop.html">New Arrivals</a><br>
+                    <a href="shop.html?category=Dresses">Girls</a><br>
+                    <a href="shop.html?category=Boys">Boys</a>
+                </p>
+            </div>
+            <div>
+                <h3>Help</h3>
+                <p>
+                    <a href="size-guide.html">Size Guide</a><br>
+                    <a href="about.html">About Us</a><br>
+                    <a href="contact.html">Contact</a>
+                </p>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>
+                    H. No. 45, Argade Niwas, Kakade Galli, Zenda Maidan, Near Yash Kirana, Waluj, Maharashtra 431133<br>
+                    +91 74208 48939<br>
+                    omagroasia@gmail.com
+                </p>
+            </div>
+        </div>
+        <div class="copy">© 2026 Aura Kids Wear India Private Limited • Live Preview on GitHub Pages</div>
+    </footer>
+
+    <script src="js/store.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+@extends('layouts.app',['title'=>'Contact']) @section('content')<main class="wrap"><div class="page article"><h1>Contact AURA</h1><p>H. No. 45, Argade Niwas, Kakade Galli, Zenda Maidan, Near Yash Kirana, Waluj, Maharashtra 431133</p><p>+91 74208 48939<br>omagroasia@gmail.com</p></div></main>@endsection
